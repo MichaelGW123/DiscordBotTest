@@ -15,7 +15,7 @@ try:
     SECRET = os.getenv('CLIENT_SECRET')
     AGENT = os.getenv('USER_AGENT')
 except KeyError as e:
-    print("Variables not correctly set")
+    print("Variables not correctly set.")
 
 
 if sys.version_info[0] == 3 and sys.version_info[1] >= 8 and sys.platform.startswith('win'):
